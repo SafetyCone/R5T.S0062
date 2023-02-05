@@ -1,13 +1,17 @@
 using System;
+using System.Threading.Tasks;
 
 
 namespace R5T.S0062
 {
     class Program
     {
-        static void Main()
+        static async Task Main()
         {
-            Console.WriteLine("Hello World!");
+            await Scripts.Instance.GenerateAllTailwindContentPathsJsonFile();
+
+            //Construction.Instance.LoadAndSaveTailwindContentPathsJsonFile();
+            //Construction.Instance.CombineProjectContentPaths();
         }
     }
 }
