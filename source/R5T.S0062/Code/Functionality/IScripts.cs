@@ -12,6 +12,7 @@ namespace R5T.S0062
         public async Task GenerateAllTailwindContentPathsJsonFile()
         {
             /// Inputs.
+            // This should be the server project for 
             var projectFilePath =
                 @"C:\Code\DEV\Git\GitHub\davidcoats\D8S.W0003.Private\source\D8S.W0003\D8S.W0003.csproj"
                 ;
