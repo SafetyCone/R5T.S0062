@@ -14,7 +14,7 @@ namespace R5T.S0062
             /// Inputs.
             // This should be the server project for 
             var projectFilePath =
-                @"C:\Code\DEV\Git\GitHub\davidcoats\D8S.W0003.Private\source\D8S.W0003\D8S.W0003.csproj"
+                @"C:\Code\DEV\Git\GitHub\SafetyCone\E2000.Private\source\E2000.Server\E2000.Server.csproj"
                 ;
 
 

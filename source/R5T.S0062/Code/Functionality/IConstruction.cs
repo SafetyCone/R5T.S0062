@@ -41,7 +41,7 @@ namespace R5T.S0062
                         .Now();
 
                     var sourceRelativeGlobbedPaths = absoluteGlobbedPaths
-                        .Select(absoluteGlobbedPath => Instances.PathOperator.GetRelativePath(
+                        .Select(absoluteGlobbedPath => Instances.PathOperator.Get_RelativePath(
                             destinationProjectFilePath,
                             absoluteGlobbedPath))
                         .Now();
@@ -52,7 +52,7 @@ namespace R5T.S0062
 
             var formattedDestinationProjectRelativeGlobbedPaths = destinationProjectRelativeGlobbedPaths
                 // We want non-Windows paths.
-                .Select(path => Instances.PathOperator.EnsureNonWindowsDirectorySeparator(path))
+                .Select(path => Instances.PathOperator.Ensure_UsesNonWindowsDirectorySeparator(path))
                 // Convention for Tailwind CSS is to start from the current directory with "./".
                 .Select(path => $"./{path}")
                 .Now();
